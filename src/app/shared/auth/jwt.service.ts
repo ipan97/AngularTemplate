@@ -52,7 +52,6 @@ export class AuthServerProvider {
   }
 
   logout(): Observable<any> {
-
     return new Observable((observer) => {
       this.$localStorage.clear('authenticationToken');
       this.$sessionStorage.clear('authenticationToken');
